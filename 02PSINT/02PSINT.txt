@@ -1,0 +1,94 @@
+//Desarolla un algoritmo que permita leer tres valores y almacenan en las variables A,B y C
+Algoritmo sin_titulo
+	Definir a,b,c como entero 
+	Escribir  "Escribir primer numero"
+	Leer a
+	Escribir  "Escribir segundo numero"
+	leer b
+	Escribir "Escribir tercer numero"
+	Leer c
+	si a>b y a>c Entonces
+		Escribir  "el mayor es",a
+	SiNo
+		si b>a y b>c Entonces
+			Escribir "el mayor es",b
+		SiNo
+			si c>a y c>b Entonces
+				Escribir "el mayor es",c
+			FinSi
+		FinSi
+	FinSi
+	si a<b  y a<c Entonces
+		Escribir "el menor es",a
+	SiNo
+		si b<a y b<c Entonces
+			Escribir "el menor es",b
+		SiNo
+			si c<a y c<b Entonces
+				Escribir "el menor es",c
+			SiNo
+				escribir "numeros iguales"
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo
+
+
+
+
+
+
+
+//Desarrolle un algoritmo que realice la sumatoria de los numeros enteros comprendidos entre el 1 y el10, es decir,1+2+3+...10
+Algoritmo sin_titulo
+	result <- 0
+	Para i<-1 Hasta 10 Hacer
+		Escribir "coloca el numero", i,; Sin Saltar
+		leer num1
+		result <- result+num1
+	FinPara
+	escribir "el resultado es:",result 
+FinAlgoritmo
+
+
+
+
+
+
+//Determinar la hipotenusa de un tringulo rectangulo conocidas las longitudes de sus dos catetos 
+Algoritmo hipotenusa
+	Repetir
+		Definir a,b,c Como Real
+		Escribir "ingresa cateto a"
+		leer a
+		Escribir "ingresa cateto b"
+		Leer b
+		c<-RC((a*a)+(b*b))
+		Escribir "la hipotennusa del triangulo es ",c
+
+		Escribir "desea realizar de nuevo la operacion,1:si 2:no"
+		Leer op
+	Hasta Que op<>1
+	
+FinAlgoritmo
+
+
+
+
+
+
+
+//Desarrolle un algoritmo que permita ddeterminar el area y volumen de un cilindro dado su radio (R) y altura (H) 
+Algoritmo sin_titulo
+	definir r,h Como Real
+	escribir "ingrese el radio"
+	leer R
+	Escribir "ingrese altura"
+	Leer H
+	area<-2*pi*R*(R+h)
+	volumen<-pi*(R^2)*H
+	Escribir  "el volumen es",volumen
+	Escribir   "el area es",area
+	
+	
+FinAlgoritmo
