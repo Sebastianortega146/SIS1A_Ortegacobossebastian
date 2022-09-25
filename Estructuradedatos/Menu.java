@@ -1,5 +1,5 @@
 // 14 programas 
-// alumno : luis raul manjarrez carbajal 
+
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class Menu{
@@ -95,7 +95,7 @@ public class Menu{
                     break; 
                 }
             }
-                break;// aqui termina el primer programa descuentos 
+                break;
                 case 2 :
                 System.out.println("\n\n\t\tCONVERCIONES DE TEMPERATURA "); 
                 System.out.println("\n\nLee las opciones y escoje la de tu agrado :");
