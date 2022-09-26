@@ -1,5 +1,4 @@
-// 14 programas 
-
+// 14 
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class Menu{
@@ -252,8 +251,8 @@ public class Menu{
 
         }
 
-                break;// aqui termina el segundo programa temperatura 
-                case 3 :// aqui empieza el tercer programa
+                break;u 
+                case 3 :
                 System.out.println("\n\n\t\t MENU PRINCIPAL "); 
                 System.out.println("\n\nLee las opciones y escoje la de tu agrado : "); 
                 System.out.println(" 1 rectangulo"); 
@@ -351,8 +350,8 @@ public class Menu{
                     break; 
                 }
 
-                break;// aqui termina el tercer programa 
-                case 4 ://aqui em empieza el programa JOption
+                break; 
+                case 4 :
                 JOptionPane.showMessageDialog(null," \t\t CALCULADORA "); 
                 nombre = JOptionPane.showInputDialog("Ingresa tu nombre "); 
             JOptionPane.showMessageDialog(null,"Hola " + nombre);
@@ -391,7 +390,7 @@ public class Menu{
                 break; 
             }
 
-                break;// aqui termina el 4 programa 
+                break; 
                 case 5 :
                 do {
                     System.out.println("\n\n");
@@ -407,7 +406,7 @@ public class Menu{
 
 
                 }while(op13 != 2);
-                break; // aqui termina el programa 
+                break; 
                 case 6 :
                 System.out.println("\n\n\t\t FACTORIAL DE UN NUMERO ");
                 System.out.println("\n\nIngrese un numero positivo que desea factorial");
