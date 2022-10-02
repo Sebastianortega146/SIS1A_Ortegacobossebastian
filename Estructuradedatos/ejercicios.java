@@ -17,7 +17,7 @@ class ejercicios {
         }
 
         public void Ejercicio2(){
-
+jaba
         }
 
         public void Ejercicio3(){
