@@ -25,7 +25,7 @@ public class convolucion{
             vector3[j] = (vector[1]*vector2[1]);
             j++;
             vector3[1] = (vector3[0]+vector3[1]);
-            j++; // vector3[2]
+            j++; 
             vector3[j] = (vector[0]*vector2[2]);
             j++; 
             vector3[j] = (vector[1]*vector2[1]); 
