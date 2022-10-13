@@ -1,17 +1,21 @@
+//Sebastian Ortega Cobos 
+//EXAMEN
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class TRESENLINEA {
+    final static int JUGADOR_JUGADOR = 1;
+    final static int JUGADOR_CPU = 2;
+    final static char ESPACIO_VACIO = ' ';
+    final static int CONTEO_PARA_GANAR = 3;
     final static int FILAS = 3;
     final static int COLUMNAS = 3;
     final static char JUGADOR_X = 'X';
     final static char JUGADOR_O = 'O';
     final static char JUGADOR_CPU_O = JUGADOR_O;
-    final static char ESPACIO_VACIO = ' ';
-    final static int CONTEO_PARA_GANAR = 3;
+  
     final static char letra = 0;
-    final static int JUGADOR_JUGADOR = 1;
-    final static int JUGADOR_CPU = 2;
+    
     final static Scanner sc = new Scanner(System.in);
     static char[][] clonarMatriz(char[][] tableroOriginal) {
         char[][] copia = new char[FILAS][COLUMNAS];
