@@ -1,35 +1,31 @@
+
 public class Leon extends Animal{
     //aqui deberia de venir String
-    String rugido;
+    int num_vidas;
 
     public Leon(){
 
     }
 
-    public Leon(String nombre, String raza, String tipo_alimento, int edad, String rugido){
+    public Leon(String nombre, String raza, String tipo_alimento, int edad, int num_vidas){
         //debo de poder acceder a la clase super
-        super(nombre, raza, tipo_alimento, edad);
-        this.rugido = rugido;
+        super(nombre, raza, tipo_alimento, edad,num_vidas);
+        this.num_vidas = num_vidas;
     }
 
     //recibir
-    public String rugido(){
-        return rugido;
+    public int getNum_vidas(){
+        return num_vidas;
     }
 
     //enviar
-    public void setrugido(String rugido){
-        this.rugido = rugido;
+    public void setNum_vidas(int num_vidas){
+        this.num_vidas = num_vidas;
     }
-
-    //el metodo propio del hasmter
-    public void mostrarLeon(){
-        System.out.println("El nombre del Leon es: " + getNombre() + "\n" + "Su raza es: " + getRaza() + "\n" + "Se alimenta de: " +
-        getTipo_alimento() +  "\n" + "Tiene la edad de: " + getEdad() + "\n" + "Su rugido es: " + rugido);
-    }
-
-
-
 
     
+    public void mostrarLeon(){
+        System.out.println("El nombre del michi es: " + getNombre() + "\n" + "Su raza es: " + getRaza() + "\n" + "Se alimenta de: " +
+        getTipo_alimento() +  "\n" + "Tiene la edad de: " + getedad() + "\n" + "Su num de vidas es: " + num_vidas);
+    }
 }

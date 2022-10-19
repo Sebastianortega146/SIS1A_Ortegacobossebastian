@@ -18,7 +18,7 @@ public class Perro extends Animal{
 
     public Perro(String nombre, String raza, String tipo_alimento, int edad, String ladrido){
         //debo de poder acceder a la clase super
-        super(nombre, raza, tipo_alimento, edad);
+        super(nombre, raza, tipo_alimento,edad,Ladrido);
         this.ladrido = ladrido;
     }
 
@@ -35,7 +35,7 @@ public class Perro extends Animal{
     //el metodo propio del perro
     public void mostrarPerro(){
         System.out.println("El nombre del perro es: " + getNombre() + "\n" + "Su raza es: " + getRaza() + "\n" + "Se alimenta de: " +
-        getTipo_alimento() +  "\n" + "Tiene la edad de: " + getEdad() + "\n" + "Su ladrido es: " + ladrido);
+        getTipo_alimento() +  "\n" + "Tiene la edad de: " + getedad() + "\n" + "Su ladrido es: " + ladrido);
     }
 
 

@@ -1,31 +1,32 @@
+
 public class Cuyo extends Animal{
     //aqui deberia de venir String
-    String ruidito;
+    int num_vidas;
 
     public Cuyo(){
 
     }
 
-    public Cuyo(String nombre, String raza, String tipo_alimento, int edad, String ruidito){
+    public Cuyo(String nombre, String raza, String tipo_alimento, int edad, int num_vidas){
         //debo de poder acceder a la clase super
-        super(nombre, raza, tipo_alimento, edad);
-        this.ruidito= ruidito;
+        super(nombre, raza, tipo_alimento, edad,num_vidas);
+        this.num_vidas = num_vidas;
     }
 
     //recibir
-    public String getruidito(){
-        return ruidito;
+    public int getNum_vidas(){
+        return num_vidas;
     }
 
     //enviar
-    public void setruidito(String ruidito){
-        this.ruidito = ruidito;
+    public void setNum_vidas(int num_vidas){
+        this.num_vidas = num_vidas;
     }
 
-    //el metodo propio del hasmter
+    //el metodo propio del perro
     public void mostrarCuyo(){
-        System.out.println("El nombre del Cuyo es: " + getNombre() + "\n" + "Su raza es: " + getRaza() + "\n" + "Se alimenta de: " +
-        getTipo_alimento() +  "\n" + "Tiene la edad de: " + getEdad() + "\n" + "Su ruidito es: " + ruidito);
+        System.out.println("El nombre del michi es: " + getNombre() + "\n" + "Su raza es: " + getRaza() + "\n" + "Se alimenta de: " +
+        getTipo_alimento() +  "\n" + "Tiene la edad de: " + getedad() + "\n" + "Su num de vidas es: " + num_vidas);
     }
 
 
