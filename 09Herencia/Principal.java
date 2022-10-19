@@ -2,9 +2,13 @@ import java.util.Scanner;
 
 public class Principal {
 
+    private static Scanner miteclado;
+
     public static void main(String[] args){
         Scanner entrada = new Scanner(System.in);
         int op;
+        do{
+            Scanner miteclado = new Scanner(System.in);
         
         //hago la instancia del animal perro
         Perro dog = new Perro();
@@ -37,7 +41,7 @@ public class Principal {
         System.out.println(" 7 Leon ");
         System.out.println("Digita tu opcion ");
         op = entrada.nextInt();
-
+        
         switch(op){
             case 1:
             dog.mostrarPerro();
@@ -66,12 +70,21 @@ public class Principal {
             case 7:
             lion.mostrarLeon();
             break;
+            default:
+            System.out.println(" opcion invalida ");
+            break;
 
+        }   
+        System.out.println("\n\n\nDeseas repetir la lista de animales ?");
+        System.out.println("1 si ");
+        System.out.println("2 no ");
+        op = miteclado.nextInt();
+        
+
+        }while(op != 2); 
 
 
 
         }
-
     }
     
-}

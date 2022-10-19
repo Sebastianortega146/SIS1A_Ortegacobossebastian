@@ -32,7 +32,7 @@ public class Gato extends Animal{
         this.num_vidas = num_vidas;
     }
 
-    //el metodo propio del perro
+    
     public void mostrarGato(){
         System.out.println("El nombre del michi es: " + getNombre() + "\n" + "Su raza es: " + getRaza() + "\n" + "Se alimenta de: " +
         getTipo_alimento() +  "\n" + "Tiene la edad de: " + getedad() + "\n" + "Su num de vidas es: " + num_vidas);

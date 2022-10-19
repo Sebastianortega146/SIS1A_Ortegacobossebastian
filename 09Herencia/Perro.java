@@ -17,8 +17,7 @@ public class Perro extends Animal{
     }
 
     public Perro(String nombre, String raza, String tipo_alimento, int edad, String ladrido){
-        //debo de poder acceder a la clase super
-        super(nombre, raza, tipo_alimento,edad,Ladrido);
+        
         this.ladrido = ladrido;
     }
 
