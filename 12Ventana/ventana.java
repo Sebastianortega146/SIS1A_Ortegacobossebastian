@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,7 +23,7 @@ public class ventana extends JFrame {
         colocarPaneles();
         colocarBotones();
         colocarEtiquetas();
-        colocarCajasTexto();
+        
        
 
     }
@@ -53,7 +52,7 @@ public class ventana extends JFrame {
         });
         mainPanel.add(exitButton);
 
-        //Boton de login (en este tengo el problema)
+     
 
         JButton loginButton = new JButton("iniciar Sesion");
         loginButton.setBounds(10, 80, 120, 25);
@@ -99,27 +98,23 @@ public class ventana extends JFrame {
         JLabel userLabel = new JLabel("Usuario");
         userLabel.setBounds(10, 10, 120, 50);
         mainPanel.add(userLabel);
+       
+        userBox.setBounds(160, 20, 160, 25);
+        mainPanel.add(userBox);
 
         JLabel userPass = new JLabel("Contraseña");
         userPass.setBounds(10, 40, 80, 50);
         mainPanel.add(userPass);
-
-    }
-
-    private void colocarCajasTexto() {
-        //Cajas de Texto
-        JTextField userBox = new JTextField();
-        userBox.setBounds(160, 20, 160, 25);
-        mainPanel.add(userBox);
-
-        JTextField passBox = new JPasswordField();
         passBox.setBounds(160, 50, 160, 25);
         mainPanel.add(passBox);
 
     }
+
+   
     public static void main(String[] args) {
-        ventana2 mainPanel = new ventana2();
+        ventana mainPanel = new ventana();
         mainPanel.setVisible(true);
 
     }
-}
+
+
