@@ -62,17 +62,17 @@ public class ventana extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String adminUser = "Sebas";
-                String adminPass = "Ortega";
+                String usuarioUser = "Sebas";
+                String usuarioPass = "Ortega";
 
-                if (adminUser.equals(userBox.getText())) {
+                if (usuarioUser.equals(userBox.getText())) {
                     String contrasena = "";
 
                     for (int i = 0; i < passBox.getPassword().length; i++) {
                         contrasena += passBox.getPassword()[i];
                     }
 
-                    if (adminPass.equals(contrasena)) {
+                    if (usuarioPass.equals(contrasena)) {
                         JOptionPane.showMessageDialog(null, "Bienvenido");
                     } else {
                         JOptionPane.showMessageDialog(null, "Error, contraseña incorrecta");
