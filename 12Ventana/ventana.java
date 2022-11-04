@@ -42,15 +42,15 @@ public class ventana extends JFrame {
         passBox = new JPasswordField();
 
         //Boton de salir
-        JButton exitButton = new JButton("Registrarse");
-        exitButton.setBounds(180, 80, 120, 30);
-        exitButton.addActionListener(new ActionListener() {
+        JButton registroButton = new JButton("Registrarse");
+        registroButton.setBounds(180, 80, 120, 30);
+        registroButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
             }
         });
-        mainPanel.add(exitButton);
+        mainPanel.add(registroButton);
 
      
 
