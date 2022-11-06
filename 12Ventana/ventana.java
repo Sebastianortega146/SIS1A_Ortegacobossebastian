@@ -1,19 +1,32 @@
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ventana extends JFrame {
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+
+public class Ventana extends JFrame implements ActionListener{
 
     private JPanel mainPanel;
     private JTextField userBox;
     private JPasswordField passBox;
 
     //Constructor de la ventana del login.
-    public ventana() {
-        this.setTitle("Java Ticket System");
+    public Ventana() {
+        this.setTitle("DORMIDITOS");
         this.setSize(370, 170);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+         JLabel etiqueta1 = new JLabel();
+        etiqueta1.setText("REGISRTO DE MIMIDOS");
+        
+         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        
         iniciarComponentes();
 
     }
@@ -45,10 +58,16 @@ public class ventana extends JFrame {
         JButton registroButton = new JButton("Registrarse");
         registroButton.setBounds(180, 80, 120, 30);
         registroButton.addActionListener(new ActionListener() {
+
             @Override
-            public void actionPerformed(ActionEvent e) {
-                System.exit(0);
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            
+                Ventana2 newFrame = new Ventana2();
+       newFrame.setVisible(true);
             }
+
+            
+     
         });
         mainPanel.add(registroButton);
 
@@ -62,7 +81,7 @@ public class ventana extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String usuarioUser = "Sebas";
+                String usuarioUser = "Sebastian";
                 String usuarioPass = "Ortega";
 
                 if (usuarioUser.equals(userBox.getText())) {
@@ -112,9 +131,15 @@ public class ventana extends JFrame {
 
    
     public static void main(String[] args) {
-        ventana mainPanel = new ventana();
+        Ventana mainPanel = new Ventana();
         mainPanel.setVisible(true);
-
+        
     }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
 
 }
