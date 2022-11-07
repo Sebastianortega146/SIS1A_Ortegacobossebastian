@@ -8,11 +8,11 @@ public class Ventana2 extends JFrame{
     public Ventana2(){
     
         this.setSize(800,500);
-        setTitle("REGISRTO DE MIMIDOS");
+        setTitle("REGISRTO");
         setLocation(500,250); //localisacion de tu pantalla
         setLocationRelativeTo(null);//centro de pantalla pra todo tipo de tamaño de compu
         JLabel etiqueta1 = new JLabel();
-        etiqueta1.setText("REGISRTO DE MIMIDOS");
+        etiqueta1.setText("REGISRTO ");
        
         iniciarComponentes();
          panel.add(etiqueta1);

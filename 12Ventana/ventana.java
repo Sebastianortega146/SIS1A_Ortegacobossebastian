@@ -18,7 +18,7 @@ public class Ventana extends JFrame implements ActionListener{
 
     //Constructor de la ventana del login.
     public Ventana() {
-        this.setTitle("DORMIDITOS");
+        this.setTitle("Hola Mudo");
         this.setSize(370, 170);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
