@@ -23,7 +23,7 @@ public class Ventana extends JFrame implements ActionListener{
         this.setLocationRelativeTo(null);
         this.setResizable(false);
          JLabel etiqueta1 = new JLabel();
-        etiqueta1.setText("REGISRTO DE MIMIDOS");
+        etiqueta1.setText("Hola Mundo");
         
          setDefaultCloseOperation(EXIT_ON_CLOSE);
         
