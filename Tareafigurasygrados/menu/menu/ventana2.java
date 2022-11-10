@@ -133,8 +133,8 @@ public class ventana2 extends JFrame implements ActionListener {
 
     private void colocarEtiquetas() {
 
-        JLabel userLabel = new JLabel("ELIGE UNA FIGURA");
-        userLabel.setBounds(100, 0, 210, 50);
+        JLabel userLabel = new JLabel("LLEGASTE AQUI ELIGE UNA FIGURITA");
+        userLabel.setBounds(15, 0, 210, 50);
         mainPanel.add(userLabel);
     }
 

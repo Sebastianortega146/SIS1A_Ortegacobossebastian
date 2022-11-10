@@ -19,9 +19,10 @@ public class Grados extends JFrame{
  
         Container contenedor = getContentPane();
         contenedor.setLayout(new FlowLayout());
+        this.setLocationRelativeTo(null);
  
-        eDe = new JLabel("De:     ");
-        eA = new JLabel("       A:");
+        eDe = new JLabel("HOLI    ");
+        eA = new JLabel(" YA ESTAS AQUI ESCOJE");
         JPanel panel1 = new JPanel();
         panel1.add(eDe);
         panel1.add(eA);
