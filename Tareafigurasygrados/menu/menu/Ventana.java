@@ -20,12 +20,12 @@ public class Ventana extends JFrame implements ActionListener{
 
     //Constructor de la ventana del login.
     public Ventana() {
-        this.setTitle("Hola Mudo");
+        this.setTitle("Menu");
         this.setSize(370, 170);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
          JLabel etiqueta1 = new JLabel();
-        etiqueta1.setText("Hola Mundo");
+        etiqueta1.setText("Menu");
         
          setDefaultCloseOperation(EXIT_ON_CLOSE);
         
